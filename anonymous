@@ -1,0 +1,59 @@
+interface Mango
+{
+public void mango();
+public void kiwi();
+}
+class Taste
+{
+public static void main(String args[])
+{
+Mango a=new Mango()
+{
+public void mango()
+{
+System.out.println("This mango is sweet.");
+}
+public void kiwi()
+{
+System.out.println("This kiwi is sour.");
+}
+};
+a.mango();
+a.kiwi();
+}
+}
+//
+class Fruits
+{
+void mango()
+{
+System.out.println("Sweet mangoes");
+}
+void kiwi()
+{
+System.out .println("Sweet kiwis");
+}
+}
+class Taste1
+{
+public static void main(String args[])
+{
+Fruits f=new Fruits();
+Fruits f1=new Fruits()
+{
+void mango()
+{
+System.out.println("Sour mango");
+}
+void kiwi()
+{
+System.out.println("Sour kiwi");
+
+}
+};
+f.mango();
+f1.mango();
+f.kiwi();
+f1.kiwi();
+}
+}
