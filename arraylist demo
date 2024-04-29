@@ -1,0 +1,31 @@
+import java.util.*;
+class ArrayListDemo
+{
+@SuppressWarnings("unchecked")
+public static void  main(String[]args)
+{
+ ArrayList l=new ArrayList();
+l.add("Rohit");
+l.add("Ram");
+l.add("Mayur");
+l.add("Amit");
+l.add("Om");
+System.out.println(l);
+l.add(2,"Raj");
+System.out.println(l);
+l.remove("Mayur");
+System.out.println(l);
+l.remove(1);
+System.out.println(l);
+l.set(3,"AmitKumar");
+System.out.println(l);
+System.out.println(l.size());
+LinkedList ll=new LinkedList ();
+ll.add(10);
+ll.add(20);
+ll.add(30);
+System.out.println(l);
+l.addAll(ll);
+System.out.println(l);
+}
+}
